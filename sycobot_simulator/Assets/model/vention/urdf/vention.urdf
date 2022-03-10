@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="vention">
+  <link
+    name="structure">
+    <inertial>
+      <origin
+        xyz="0.107814190564577 0.566367837963756 -0.823987435502551"
+        rpy="0 0 0" />
+      <mass
+        value="14.1695632229938" />
+      <inertia
+        ixx="0.109973912692726"
+        ixy="-0.000163935202793328"
+        ixz="1.22501086784118E-06"
+        iyy="0.19526897267764"
+        iyz="0.00357632844304502"
+        izz="0.130505910280162" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vention/meshes/structure.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vention/meshes/structure.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="plate">
+    <inertial>
+      <origin
+        xyz="1.92312572810938E-09 0.00560028791638634 3.69420727341918E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.441513794474775" />
+      <inertia
+        ixx="0.0021724230362444"
+        ixy="7.50786094373707E-13"
+        ixz="-9.2420489392633E-07"
+        iyy="0.00433553756927178"
+        iyz="1.38024737039028E-12"
+        izz="0.00217242292501514" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vention/meshes/plate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.337254901960784 0.529411764705882 0.756862745098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vention/meshes/plate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_struct"
+    type="fixed">
+    <origin
+      xyz="-0.022411 0.074005 0.29717"
+      rpy="2.3562 8.8211E-05 -0.00021296" />
+    <parent
+      link="structure" />
+    <child
+      link="plate" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

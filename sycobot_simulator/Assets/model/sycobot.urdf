@@ -1,0 +1,1312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="sycobot">
+  <material name="white">
+    <color rgba="1 1 1 1" />
+  </material>
+  <material name="orange">
+    <color rgba="1 0.4 0 1" />
+  </material>
+  <material name="rgba-0.337254901960784-0.529411764705882-0.9-1">
+    <color rgba="0.3373 0.5294 0.9 1" />
+  </material>
+  <material name="Material_001">
+    <color rgba="0.6652 0.6652 0.6652 1" />
+  </material>
+  <material name="Material">
+    <color rgba="0.2209 0.2209 0.2209 1" />
+  </material>
+  <material name="Material_003">
+    <color rgba="0.2209 0.2209 0.2209 1" />
+  </material>
+  <material name="silver">
+    <color rgba="0.79 0.82 0.93 1" />
+  </material>
+  <material name="dark_grey">
+    <color rgba="0.3 0.3 0.3 1" />
+  </material>
+  <material name="black">
+    <color rgba="0 0 0 1" />
+  </material>
+  <link name="base_footprint" />
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.037646 0 0.2" />
+      <mass value="58" />
+      <inertia ixx="2.06093239784241" ixy="0" ixz="0" iyy="4.34999847412109" iyz="0" izz="5.540931224823" />
+    </inertial>
+    <visual>
+      <origin xyz="0.037646 0 0" />
+      <geometry>
+        <mesh filename="package://meshes/mir_100_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.037646 0 0" />
+      <geometry>
+        <mesh filename="package://meshes/mir_100_base.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="surface" />
+  <link name="structure">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.44074 0.40727 0.19962" />
+      <mass value="9.3680000305" />
+      <inertia ixx="0.159190014004707" ixy="1.7496938653494E-07" ixz="0.000116392744530458" iyy="0.190110132098198" iyz="-0.000115433096652851" izz="0.0449810139834881" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/structure.STL" scale="1 1 1" />
+      </geometry>
+      <material name="orange">
+        <color rgba="1 0.4 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/structure.STL" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="plate">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0.0056 0" />
+      <mass value="0.4415138066" />
+      <inertia ixx="0.00217245286330581" ixy="2.0470454498156E-10" ixz="-9.53038863826805E-07" iyy="0.00433553755283356" iyz="1.15201966022216E-10" izz="0.00217239302583039" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/plate.STL" scale="1 1 1" />
+      </geometry>
+      <material name="rgba-0.337254901960784-0.529411764705882-0.9-1">
+        <color rgba="0.3373 0.5294 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/plate.STL" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="base_0">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-3.4E-05 -0.004815 0.048482" />
+      <mass value="4.1199998856" />
+      <inertia ixx="0.0163310077041388" ixy="-6.4834516706469E-06" ixz="1.99862915906124E-06" iyy="0.014945006929338" iyz="-0.000516859872732311" izz="0.0225770063698292" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_0_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="link1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000119 0.0428 -0.006383" />
+      <mass value="7.8000001907" />
+      <inertia ixx="0.0450600199401379" ixy="4.11267792514991E-05" ixz="-5.25452342117205E-05" iyy="0.0296790152788162" iyz="-0.00199589901603758" izz="0.0470560118556023" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_1_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.2" radius="0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link2">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.25973 -5.3E-05 0.15782" />
+      <mass value="10.8299999237" />
+      <inertia ixx="0.03758604824543" ixy="-0.000370068941265345" ixz="-0.00699278106912971" iyy="0.849437654018402" iyz="3.97093826904893E-05" izz="0.850202620029449" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_2_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_2_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_2_2.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 4.712734 0" xyz="0.3 0 0.1525" />
+      <geometry>
+        <cylinder length="0.75" radius="0.08" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link3">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-1.5E-05 -0.006702 0.044608" />
+      <mass value="3.6800000668" />
+      <inertia ixx="0.0187480039894581" ixy="7.80597474658862E-06" ixz="-5.03341652802192E-06" iyy="0.0189720038324595" iyz="-0.000993420835584402" izz="0.0115019995719194" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_3_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="link4">
+    <inertial>
+      <origin rpy="0 0 0" xyz="7.1E-05 0.091879 -0.18252" />
+      <mass value="3.8199999332" />
+      <inertia ixx="0.190632894635201" ixy="-1.33093099066173E-05" ixz="-4.01440011046361E-05" iyy="0.172677412629128" iyz="-0.0529951266944408" izz="0.0303857233375311" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_4_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_4_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-0.55 0 0" xyz="0 0.07 -0.3" />
+      <geometry>
+        <cylinder length="0.4" radius="0.07" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link5">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.000273 0.003651 0.032088" />
+      <mass value="2.8199999332" />
+      <inertia ixx="0.0155831053853035" ixy="1.30323371649865E-06" ixz="-8.32775003800634E-06" iyy="0.0115188946947455" iyz="0.000425537640694529" izz="0.0088671064004302" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_5_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-4.712185 0 0" />
+      <geometry>
+        <cylinder length="0.15" radius="0.08" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link6">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.000292 7E-06 -0.0539" />
+      <mass value="1.1599999666" />
+      <inertia ixx="0.00482819974422455" ixy="4.12969620811054E-06" ixz="6.98771873430815E-06" iyy="0.00595190096646547" iyz="4.25179950980237E-06" izz="0.00612630043178797" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/MF1013_6_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="gripper_base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.6369510293" />
+      <inertia ixx="0.000380000012228265" ixy="0" ixz="0" iyy="0.00110999995376915" iyz="0" izz="0.00117099995259196" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_base_link.dae" scale="1.000006 0.999994 1" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_base_link.stl" scale="1.000006 0.999994 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_finger2_inner_knuckle_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.0299510006" />
+      <inertia ixx="3.89999986509793E-05" ixy="0" ixz="0" iyy="4.99999987368938E-06" iyz="0" izz="3.5000000934815E-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_inner_knuckle_link.dae" scale="1.000006 1.000004 0.999991" />
+      </geometry>
+      <material name="Material">
+        <color rgba="0.2209 0.2209 0.2209 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_inner_knuckle_link.stl" scale="1.000006 1.000004 0.999991" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_finger2_finger_tip_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.0195550006" />
+      <inertia ixx="1.99999999495049E-06" ixy="0" ixz="0" iyy="4.99999987368938E-06" iyz="0" izz="6.00000021222513E-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_finger_tip_link.dae" scale="1.000002 1.000013 0.999985" />
+      </geometry>
+      <material name="Material_003">
+        <color rgba="0.2209 0.2209 0.2209 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_finger_tip_link.stl" scale="1.000002 1.000013 0.999985" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_finger1_inner_knuckle_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.0299510006" />
+      <inertia ixx="3.89999986509793E-05" ixy="0" ixz="0" iyy="4.99999987368938E-06" iyz="0" izz="3.5000000934815E-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_inner_knuckle_link.dae" scale="1.000006 1.000004 0.999991" />
+      </geometry>
+      <material name="Material">
+        <color rgba="0.2209 0.2209 0.2209 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_inner_knuckle_link.stl" scale="1.000006 1.000004 0.999991" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_finger1_finger_tip_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.0195550006" />
+      <inertia ixx="1.99999999495049E-06" ixy="0" ixz="0" iyy="4.99999987368938E-06" iyz="0" izz="6.00000021222513E-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_finger_tip_link.dae" scale="1.000002 1.000013 0.999985" />
+      </geometry>
+      <material name="Material_003">
+        <color rgba="0.2209 0.2209 0.2209 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_finger_tip_link.stl" scale="1.000002 1.000013 0.999985" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_finger2_knuckle_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.0184909999" />
+      <inertia ixx="9.00183931662468E-06" ixy="-9.85071551440342E-07" ixz="3.46717446420008E-13" iyy="1.12126770090981E-06" iyz="2.70453537359492E-14" izz="9.99999792838935E-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_knuckle_link.dae" scale="1.000006 1.000004 0.999991" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_knuckle_link.stl" scale="1.000006 1.000004 0.999991" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_finger2_finger_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.0273090005" />
+      <inertia ixx="3.00000101560727E-06" ixy="-2.00000067707151E-06" ixz="4.84118723832505E-19" iyy="2.10000107472297E-05" iyz="-4.41022924111222E-18" izz="1.99999958567787E-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_finger_link.dae" scale="1.000002 1.000013 0.999985" />
+      </geometry>
+      <material name="Material">
+        <color rgba="0.2209 0.2209 0.2209 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_finger_link.stl" scale="1.000002 1.000013 0.999985" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_finger1_knuckle_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.0184909999" />
+      <inertia ixx="9.00183931662468E-06" ixy="-9.85071551440342E-07" ixz="3.46717446420008E-13" iyy="1.12126770090981E-06" iyz="2.70453537359492E-14" izz="9.99999792838935E-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_knuckle_link.dae" scale="1.000006 1.000004 0.999991" />
+      </geometry>
+      <material name="Material_001">
+        <color rgba="0.6652 0.6652 0.6652 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_knuckle_link.stl" scale="1.000006 1.000004 0.999991" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="gripper_finger1_finger_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="0.0273090005" />
+      <inertia ixx="3.00000101560727E-06" ixy="-2.00000067707151E-06" ixz="4.84118723832505E-19" iyy="2.10000107472297E-05" iyz="-4.41022924111222E-18" izz="1.99999958567787E-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_finger_link.dae" scale="1.000002 1.000013 0.999985" />
+      </geometry>
+      <material name="Material">
+        <color rgba="0.2209 0.2209 0.2209 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/robotiq_85_finger_link.stl" scale="1.000002 1.000013 0.999985" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="br_caster_rotation_link">
+    <inertial>
+      <origin rpy="0 270 336" xyz="0 0 -0.0425" />
+      <mass value="0.3097538948" />
+      <inertia ixx="0.000470907689305022" ixy="1.00243388080363E-13" ixz="-0.000129860825836658" iyy="0.000584451772738248" iyz="2.12521528695532E-13" izz="0.000237053289311007" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="silver">
+        <color rgba="0.79 0.82 0.93 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="br_caster_wheel_link">
+    <inertial>
+      <origin rpy="0 0 270" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="0.00106189539656043" ixy="0" ixz="0" iyy="0.00195312546566129" iyz="1.1974460312203E-10" izz="0.00106189562939107" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="dark_grey">
+        <color rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-4.712389 0 0" />
+      <geometry>
+        <cylinder length="0.032" radius="0.0625" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="bl_caster_rotation_link">
+    <inertial>
+      <origin rpy="0 270 336" xyz="0 0 -0.0425" />
+      <mass value="0.3097538948" />
+      <inertia ixx="0.000470907689305022" ixy="1.00243388080363E-13" ixz="-0.000129860825836658" iyy="0.000584451772738248" iyz="2.12521528695532E-13" izz="0.000237053289311007" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="silver">
+        <color rgba="0.79 0.82 0.93 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="bl_caster_wheel_link">
+    <inertial>
+      <origin rpy="0 0 270" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="0.00106189539656043" ixy="0" ixz="0" iyy="0.00195312546566129" iyz="1.1974460312203E-10" izz="0.00106189562939107" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="dark_grey">
+        <color rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-4.712389 0 0" />
+      <geometry>
+        <cylinder length="0.032" radius="0.0625" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="fr_caster_rotation_link">
+    <inertial>
+      <origin rpy="0 270 336" xyz="0 0 -0.0425" />
+      <mass value="0.3097538948" />
+      <inertia ixx="0.000470907689305022" ixy="1.00243388080363E-13" ixz="-0.000129860825836658" iyy="0.000584451772738248" iyz="2.12521528695532E-13" izz="0.000237053289311007" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="silver">
+        <color rgba="0.79 0.82 0.93 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="fr_caster_wheel_link">
+    <inertial>
+      <origin rpy="0 0 270" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="0.00106189539656043" ixy="0" ixz="0" iyy="0.00195312546566129" iyz="1.1974460312203E-10" izz="0.00106189562939107" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="dark_grey">
+        <color rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-4.712389 0 0" />
+      <geometry>
+        <cylinder length="0.032" radius="0.0625" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="fl_caster_rotation_link">
+    <inertial>
+      <origin rpy="0 270 336" xyz="0 0 -0.0425" />
+      <mass value="0.3097538948" />
+      <inertia ixx="0.000470907689305022" ixy="1.00243388080363E-13" ixz="-0.000129860825836658" iyy="0.000584451772738248" iyz="2.12521528695532E-13" izz="0.000237053289311007" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="silver">
+        <color rgba="0.79 0.82 0.93 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="fl_caster_wheel_link">
+    <inertial>
+      <origin rpy="0 0 270" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="0.00106189539656043" ixy="0" ixz="0" iyy="0.00195312546566129" iyz="1.1974460312203E-10" izz="0.00106189562939107" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="dark_grey">
+        <color rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-4.712389 0 0" />
+      <geometry>
+        <cylinder length="0.032" radius="0.0625" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_wheel_link">
+    <inertial>
+      <origin rpy="0 0 270" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="0.00106189539656043" ixy="0" ixz="0" iyy="0.00195312546566129" iyz="1.1974460312203E-10" izz="0.00106189562939107" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="dark_grey">
+        <color rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-4.712389 0 0" />
+      <geometry>
+        <cylinder length="0.032" radius="0.0625" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_wheel_link">
+    <inertial>
+      <origin rpy="0 0 270" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="0.00106189539656043" ixy="0" ixz="0" iyy="0.00195312546566129" iyz="1.1974460312203E-10" izz="0.00106189562939107" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/caster_wheel_base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="dark_grey">
+        <color rgba="0.3 0.3 0.3 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-4.712389 0 0" />
+      <geometry>
+        <cylinder length="0.032" radius="0.0625" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="us_2_frame" />
+  <link name="us_1_frame" />
+  <link name="back_laser_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="2" />
+      <inertia ixx="0.00970832910388708" ixy="0" ixz="0" iyy="0.00976016279309988" iyz="0" izz="0.00806016381829977" />
+    </inertial>
+    <visual>
+      <origin rpy="-3.141593 0 0" />
+      <geometry>
+        <mesh filename="package://meshes/sick_lms-100.stl" scale="1 1 1" />
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-3.141593 0 0" />
+      <geometry>
+        <mesh filename="package://meshes/sick_lms-100.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="front_laser_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="2" />
+      <inertia ixx="0.00970832910388708" ixy="0" ixz="0" iyy="0.00976016279309988" iyz="0" izz="0.00806016381829977" />
+    </inertial>
+    <visual>
+      <origin rpy="-3.141593 0 0" />
+      <geometry>
+        <mesh filename="package://meshes/sick_lms-100.stl" scale="1 1 1" />
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="-3.141593 0 0" />
+      <geometry>
+        <mesh filename="package://meshes/sick_lms-100.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="imu_link" />
+  <link name="imu_frame" />
+  <joint name="base_footprint_base_link_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+  </joint>
+  <joint name="base_link_surface_joint" type="fixed">
+    <origin xyz="0.037646 0 0.352" />
+    <parent link="base_link" />
+    <child link="surface" />
+  </joint>
+  <joint name="surface_structure_joint" type="fixed">
+    <origin rpy="0 0 -4.712385" />
+    <parent link="surface" />
+    <child link="structure" />
+  </joint>
+  <joint name="structure_plate_joint" type="fixed">
+    <origin rpy="-4.712385 6.282884 -3.141585" xyz="2.7E-05 -0.27 0.089991" />
+    <parent link="structure" />
+    <child link="plate" />
+  </joint>
+  <joint name="plate_base_0_joint" type="fixed">
+    <origin rpy="-1.5708 0 0" />
+    <parent link="plate" />
+    <child link="base_0" />
+  </joint>
+  <joint name="base_0_link1_joint" type="revolute">
+    <origin xyz="0 0 0.1525" />
+    <parent link="base_0" />
+    <child link="link1" />
+    <limit lower="-6.28320017220972" upper="6.28320017220972" effort="346" velocity="7" />
+  </joint>
+  <joint name="link1_link2_joint" type="revolute">
+    <origin rpy="0 4.712389 -1.571" xyz="0 0.0345 0" />
+    <parent link="link1" />
+    <child link="link2" />
+    <limit lower="-6.28320017220972" upper="6.28320017220972" effort="346" velocity="7" />
+  </joint>
+  <joint name="link2_link3_joint" type="revolute">
+    <origin rpy="0 0 -4.712185" xyz="0.62 0 0" />
+    <parent link="link2" />
+    <child link="link3" />
+    <limit lower="-2.79249988363219" upper="2.79249988363219" effort="163" velocity="7" />
+  </joint>
+  <joint name="link3_link4_joint" type="revolute">
+    <origin rpy="-4.712185 0 0" xyz="0 -0.559 0" />
+    <parent link="link3" />
+    <child link="link4" />
+    <limit lower="-6.28320017220972" upper="6.28320017220972" effort="50" velocity="7" />
+  </joint>
+  <joint name="link4_link5_joint" type="revolute">
+    <origin rpy="-1.571 0 0" />
+    <parent link="link4" />
+    <child link="link5" />
+    <limit lower="-6.28320017220972" upper="6.28320017220972" effort="50" velocity="7" />
+  </joint>
+  <joint name="link5_link6_joint" type="revolute">
+    <origin rpy="-4.712185 0 0" xyz="0 -0.121 0" />
+    <parent link="link5" />
+    <child link="link6" />
+    <limit lower="-6.28320017220972" upper="6.28320017220972" effort="50" velocity="7" />
+  </joint>
+  <joint name="link6_gripper_base_link_joint" type="fixed">
+    <origin rpy="0 4.712389 0" />
+    <parent link="link6" />
+    <child link="gripper_base_link" />
+  </joint>
+  <joint name="gripper_base_link_gripper_finger2_inner_knuckle_link_joint" type="continuous">
+    <origin xyz="0.06142 -0.0127 0" />
+    <parent link="gripper_base_link" />
+    <child link="gripper_finger2_inner_knuckle_link" />
+  </joint>
+  <joint name="gripper_finger2_inner_knuckle_link_gripper_finger2_finger_tip_link_joint" type="continuous">
+    <origin xyz="0.04304 -0.037599 0" />
+    <parent link="gripper_finger2_inner_knuckle_link" />
+    <child link="gripper_finger2_finger_tip_link" />
+  </joint>
+  <joint name="gripper_base_link_gripper_finger1_inner_knuckle_link_joint" type="continuous">
+    <origin rpy="-3.141593 0 0" xyz="0.06142 0.0127 0" />
+    <parent link="gripper_base_link" />
+    <child link="gripper_finger1_inner_knuckle_link" />
+  </joint>
+  <joint name="gripper_finger1_inner_knuckle_link_gripper_finger1_finger_tip_link_joint" type="continuous">
+    <origin xyz="0.04304 -0.0376 0" />
+    <parent link="gripper_finger1_inner_knuckle_link" />
+    <child link="gripper_finger1_finger_tip_link" />
+  </joint>
+  <joint name="gripper_base_link_gripper_finger2_knuckle_link_joint" type="revolute">
+    <origin xyz="0.054904 -0.030601 0" />
+    <parent link="gripper_base_link" />
+    <child link="gripper_finger2_knuckle_link" />
+    <limit lower="-3.14000005893433" upper="3.14000005893433" effort="1000" velocity="7" />
+  </joint>
+  <joint name="gripper_finger2_knuckle_link_gripper_finger2_finger_link_joint" type="fixed">
+    <origin xyz="-0.004086 -0.031486 0" />
+    <parent link="gripper_finger2_knuckle_link" />
+    <child link="gripper_finger2_finger_link" />
+  </joint>
+  <joint name="gripper_base_link_gripper_finger1_knuckle_link_joint" type="revolute">
+    <origin rpy="-3.141593 0 0" xyz="0.054905 0.030601 0" />
+    <parent link="gripper_base_link" />
+    <child link="gripper_finger1_knuckle_link" />
+    <limit lower="0" upper="0.804000004488437" effort="1000" velocity="7" />
+  </joint>
+  <joint name="gripper_finger1_knuckle_link_gripper_finger1_finger_link_joint" type="fixed">
+    <origin xyz="-0.004085 -0.031487 0" />
+    <parent link="gripper_finger1_knuckle_link" />
+    <child link="gripper_finger1_finger_link" />
+  </joint>
+  <joint name="base_link_br_caster_rotation_link_joint" type="continuous">
+    <origin xyz="-0.270154 -0.203 0.1565" />
+    <parent link="base_link" />
+    <child link="br_caster_rotation_link" />
+    <dynamics damping="0.00999999977648258" />
+  </joint>
+  <joint name="br_caster_rotation_link_br_caster_wheel_link_joint" type="continuous">
+    <origin xyz="-0.0382 0 -0.094" />
+    <parent link="br_caster_rotation_link" />
+    <child link="br_caster_wheel_link" />
+  </joint>
+  <joint name="base_link_bl_caster_rotation_link_joint" type="continuous">
+    <origin xyz="-0.270154 0.203 0.1565" />
+    <parent link="base_link" />
+    <child link="bl_caster_rotation_link" />
+    <dynamics damping="0.00999999977648258" />
+  </joint>
+  <joint name="bl_caster_rotation_link_bl_caster_wheel_link_joint" type="continuous">
+    <origin xyz="-0.0382 0 -0.094" />
+    <parent link="bl_caster_rotation_link" />
+    <child link="bl_caster_wheel_link" />
+  </joint>
+  <joint name="base_link_fr_caster_rotation_link_joint" type="continuous">
+    <origin xyz="0.341346 -0.203 0.1565" />
+    <parent link="base_link" />
+    <child link="fr_caster_rotation_link" />
+    <dynamics damping="0.00999999977648258" />
+  </joint>
+  <joint name="fr_caster_rotation_link_fr_caster_wheel_link_joint" type="continuous">
+    <origin xyz="-0.0382 0 -0.094" />
+    <parent link="fr_caster_rotation_link" />
+    <child link="fr_caster_wheel_link" />
+  </joint>
+  <joint name="base_link_fl_caster_rotation_link_joint" type="continuous">
+    <origin xyz="0.341346 0.203 0.1565" />
+    <parent link="base_link" />
+    <child link="fl_caster_rotation_link" />
+    <dynamics damping="0.00999999977648258" />
+  </joint>
+  <joint name="fl_caster_rotation_link_fl_caster_wheel_link_joint" type="continuous">
+    <origin xyz="-0.0382 0 -0.094" />
+    <parent link="fl_caster_rotation_link" />
+    <child link="fl_caster_wheel_link" />
+  </joint>
+  <joint name="base_link_right_wheel_link_joint" type="continuous">
+    <origin xyz="0 -0.222604 0.0625" />
+    <parent link="base_link" />
+    <child link="right_wheel_link" />
+  </joint>
+  <joint name="base_link_left_wheel_link_joint" type="continuous">
+    <origin xyz="0 0.222604 0.0625" />
+    <parent link="base_link" />
+    <child link="left_wheel_link" />
+  </joint>
+  <joint name="base_link_us_2_frame_joint" type="fixed">
+    <origin xyz="0.45 0.12 0.16" />
+    <parent link="base_link" />
+    <child link="us_2_frame" />
+  </joint>
+  <joint name="base_link_us_1_frame_joint" type="fixed">
+    <origin xyz="0.45 -0.12 0.16" />
+    <parent link="base_link" />
+    <child link="us_1_frame" />
+  </joint>
+  <joint name="base_link_back_laser_link_joint" type="fixed">
+    <origin rpy="0 0 -2.356194" xyz="-0.3548 -0.2352 0.1914" />
+    <parent link="base_link" />
+    <child link="back_laser_link" />
+  </joint>
+  <joint name="base_link_front_laser_link_joint" type="fixed">
+    <origin rpy="0 0 -5.497787" xyz="0.4288 0.2358 0.1914" />
+    <parent link="base_link" />
+    <child link="front_laser_link" />
+  </joint>
+  <joint name="base_link_imu_link_joint" type="fixed">
+    <origin xyz="0 0 0.25" />
+    <parent link="base_link" />
+    <child link="imu_link" />
+  </joint>
+  <joint name="imu_link_imu_frame_joint" type="fixed">
+    <parent link="imu_link" />
+    <child link="imu_frame" />
+  </joint>
+  <gazebo reference="base_link">
+  <material>Gazebo/White</material>
+</gazebo>
+<gazebo>
+  <plugin filename="libhector_gazebo_ros_imu.so" name="imu_plugin">
+    <updateRate>50.0</updateRate>
+    <!-- <robotNamespace>$(arg robot_namespace)</robotNamespace> -->
+    <bodyName>imu_link</bodyName>
+    <frameId>imu_frame</frameId>
+    <!-- from real MiR -->
+    <topicName>imu_data</topicName>
+    <accelDrift>0.0 0.0 0.0</accelDrift>
+    <accelGaussianNoise>0.007071067811865475 0.01 0.011401754250991379</accelGaussianNoise>
+    <!-- real MiR linear_acceleration_covariance: [5e-05, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.00013] -->
+    <rateDrift>0.0 0.0 0.0</rateDrift>
+    <rateGaussianNoise>0.00282842712474619 0.00282842712474619 0.0005477225575051661</rateGaussianNoise>
+    <!-- real MiR angular_velocity_covariance: [8e-06, 0.0, 0.0, 0.0, 8e-06, 0.0, 0.0, 0.0, 3e-07] -->
+    <yawDrift>0.0</yawDrift>
+    <yawGaussianNoise>0.31622776601683794</yawGaussianNoise>
+    <!-- real MiR orientation_covariance: [0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.1] -->
+  </plugin>
+</gazebo>
+<gazebo reference="front_laser_link">
+  <!-- <material value="Gazebo/Yellow" /> -->
+  <material value="Gazebo/FlatBlack" />
+  <sensor name="front_laser_link" type="ray">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>false</visualize>
+    <update_rate>12.5</update_rate>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>541</samples>
+          <resolution>1</resolution>
+          <!-- has to be 1; actual resolution will be computed from number of samples + min_angle/max_angle -->
+          <min_angle>-2.35619449615</min_angle>
+          <max_angle>2.35619449615</max_angle>
+        </horizontal>
+      </scan>
+      <range>
+        <min>0.05</min>
+        <max>29.0</max>
+        <resolution>0.01</resolution>
+      </range>
+      <noise>
+        <type>gaussian</type>
+        <!-- Noise parameters based on published spec for S300 achieving
+                 "+-29mm" accuracy at range < 3m (~0.01 of the range) at
+                 1 sigma. -->
+        <mean>0.0</mean>
+        <stddev>0.01</stddev>
+      </noise>
+    </ray>
+    <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_front_laser_link_controller">
+      <frameName>front_laser_link</frameName>
+      <topicName>f_scan</topicName>
+    </plugin>
+  </sensor>
+</gazebo>
+<gazebo reference="back_laser_link">
+  <!-- <material value="Gazebo/Yellow" /> -->
+  <material value="Gazebo/FlatBlack" />
+  <sensor name="back_laser_link" type="ray">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>false</visualize>
+    <update_rate>12.5</update_rate>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>541</samples>
+          <resolution>1</resolution>
+          <!-- has to be 1; actual resolution will be computed from number of samples + min_angle/max_angle -->
+          <min_angle>-2.35619449615</min_angle>
+          <max_angle>2.35619449615</max_angle>
+        </horizontal>
+      </scan>
+      <range>
+        <min>0.05</min>
+        <max>29.0</max>
+        <resolution>0.01</resolution>
+      </range>
+      <noise>
+        <type>gaussian</type>
+        <!-- Noise parameters based on published spec for S300 achieving
+                 "+-29mm" accuracy at range < 3m (~0.01 of the range) at
+                 1 sigma. -->
+        <mean>0.0</mean>
+        <stddev>0.01</stddev>
+      </noise>
+    </ray>
+    <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_back_laser_link_controller">
+      <frameName>back_laser_link</frameName>
+      <topicName>b_scan</topicName>
+    </plugin>
+  </sensor>
+</gazebo>
+<gazebo reference="left_wheel_link">
+  <material>Gazebo/DarkGrey</material>
+</gazebo>
+<gazebo reference="right_wheel_link">
+  <material>Gazebo/DarkGrey</material>
+</gazebo>
+<gazebo reference="fl_caster_rotation_link">
+  <material>Gazebo/Grey</material>
+</gazebo>
+<gazebo reference="fl_caster_wheel_link">
+  <material>Gazebo/DarkGrey</material>
+</gazebo>
+<gazebo reference="fr_caster_rotation_link">
+  <material>Gazebo/Grey</material>
+</gazebo>
+<gazebo reference="fr_caster_wheel_link">
+  <material>Gazebo/DarkGrey</material>
+</gazebo>
+<gazebo reference="bl_caster_rotation_link">
+  <material>Gazebo/Grey</material>
+</gazebo>
+<gazebo reference="bl_caster_wheel_link">
+  <material>Gazebo/DarkGrey</material>
+</gazebo>
+<gazebo reference="br_caster_rotation_link">
+  <material>Gazebo/Grey</material>
+</gazebo>
+<gazebo reference="br_caster_wheel_link">
+  <material>Gazebo/DarkGrey</material>
+</gazebo>
+<transmission name="left_wheel_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_wheel_joint">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="left_wheel_motor">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="right_wheel_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_wheel_joint">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="right_wheel_motor">
+    <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo reference="left_wheel_link">
+  <mu1 value="200" />
+  <mu2 value="200" />
+  <kp value="10000000.0" />
+  <kd value="1.0" />
+  <minDepth>0.01</minDepth>
+</gazebo>
+<gazebo reference="right_wheel_link">
+  <mu1 value="200" />
+  <mu2 value="200" />
+  <kp value="10000000.0" />
+  <kd value="1.0" />
+  <minDepth>0.01</minDepth>
+</gazebo>
+<gazebo reference="fl_caster_wheel_link">
+  <mu1 value="1" />
+  <mu2 value="1" />
+  <kp value="10000000.0" />
+  <kd value="1.0" />
+  <minDepth>0.01</minDepth>
+</gazebo>
+<gazebo reference="fr_caster_wheel_link">
+  <mu1 value="1" />
+  <mu2 value="1" />
+  <kp value="10000000.0" />
+  <kd value="1.0" />
+  <minDepth>0.01</minDepth>
+</gazebo>
+<gazebo reference="bl_caster_wheel_link">
+  <mu1 value="1" />
+  <mu2 value="1" />
+  <kp value="10000000.0" />
+  <kd value="1.0" />
+  <minDepth>0.01</minDepth>
+</gazebo>
+<gazebo reference="br_caster_wheel_link">
+  <mu1 value="1" />
+  <mu2 value="1" />
+  <kp value="10000000.0" />
+  <kd value="1.0" />
+  <minDepth>0.01</minDepth>
+</gazebo>
+<gazebo>
+  <plugin filename="libgazebo_ros_p3d.so" name="p3d_base_controller">
+    <alwaysOn>true</alwaysOn>
+    <updateRate>50.0</updateRate>
+    <bodyName>base_footprint</bodyName>
+    <topicName>base_pose_ground_truth</topicName>
+    <gaussianNoise>0.01</gaussianNoise>
+    <frameName>map</frameName>
+    <xyzOffsets>0 0 0</xyzOffsets>
+    <rpyOffsets>0 0 0</rpyOffsets>
+  </plugin>
+</gazebo>
+<selfCollide>true</selfCollide>
+<gazebo reference="dsr01">
+  <selfCollide>true</selfCollide>
+</gazebo>
+<gazebo reference="base_0">
+  <selfCollide>true</selfCollide>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <mu1>30.0</mu1>
+  <mu2>30.0</mu2>
+  <maxVel>1.0</maxVel>
+  <minDepth>0.001</minDepth>
+</gazebo>
+<gazebo reference="link1">
+  <selfCollide>true</selfCollide>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <mu1>30.0</mu1>
+  <mu2>30.0</mu2>
+  <maxVel>1.0</maxVel>
+  <minDepth>0.001</minDepth>
+</gazebo>
+<gazebo reference="link2">
+  <selfCollide>true</selfCollide>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <mu1>30.0</mu1>
+  <mu2>30.0</mu2>
+  <maxVel>1.0</maxVel>
+  <minDepth>0.001</minDepth>
+</gazebo>
+<gazebo reference="link3">
+  <selfCollide>true</selfCollide>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <mu1>30.0</mu1>
+  <mu2>30.0</mu2>
+  <maxVel>1.0</maxVel>
+  <minDepth>0.001</minDepth>
+</gazebo>
+<gazebo reference="link4">
+  <selfCollide>true</selfCollide>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <mu1>30.0</mu1>
+  <mu2>30.0</mu2>
+  <maxVel>1.0</maxVel>
+  <minDepth>0.001</minDepth>
+</gazebo>
+<gazebo reference="link5">
+  <selfCollide>true</selfCollide>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <mu1>30.0</mu1>
+  <mu2>30.0</mu2>
+  <maxVel>1.0</maxVel>
+  <minDepth>0.001</minDepth>
+</gazebo>
+<gazebo reference="link6">
+  <selfCollide>true</selfCollide>
+  <kp>1000000.0</kp>
+  <kd>100.0</kd>
+  <mu1>30.0</mu1>
+  <mu2>30.0</mu2>
+  <maxVel>1.0</maxVel>
+  <minDepth>0.001</minDepth>
+</gazebo>
+<gazebo>
+  <selfCollide>true</selfCollide>
+  <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+    <robotNamespace>/sycobot</robotNamespace>
+    <controlPeriod>0.001</controlPeriod>
+    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    <legacyModeNS>true</legacyModeNS>
+  </plugin>
+</gazebo>
+<transmission name="tran1">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint1">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor1">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="tran2">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint2">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor2">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="tran3">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint3">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor3">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="tran4">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint4">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor4">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="tran5">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint5">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor5">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="tran6">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint6">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor6">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo reference="gripper_base_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<gazebo reference="gripper_finger1_knuckle_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<gazebo reference="gripper_finger2_knuckle_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<gazebo reference="gripper_finger1_finger_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<gazebo reference="gripper_finger2_finger_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<gazebo reference="gripper_finger1_inner_knuckle_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<gazebo reference="gripper_finger2_inner_knuckle_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<gazebo reference="gripper_finger1_finger_tip_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<gazebo reference="gripper_finger2_finger_tip_link">
+  <implicitSpringDamper>1</implicitSpringDamper>
+  <mu1>100000</mu1>
+  <mu2>100000</mu2>
+  <kp>100000000.0</kp>
+  <kd>1.0</kd>
+</gazebo>
+<transmission name="gripper_finger1_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_finger1_joint">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_finger1_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+<gazebo>
+  <!-- loading plugin: mimic joints works in gazebo now -->
+  <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_robotiq_85_1">
+    <joint>gripper_finger1_joint</joint>
+    <mimicJoint>gripper_finger2_joint</mimicJoint>
+    <!--multiplier>1.0</multiplier>
+                <offset>0.0</offset-->
+  </plugin>
+  <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_robotiq_85_2">
+    <joint>gripper_finger1_joint</joint>
+    <mimicJoint>gripper_finger2_inner_knuckle_joint</mimicJoint>
+    <!--multiplier>1.0</multiplier>
+                <offset>0.0</offset-->
+  </plugin>
+  <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_robotiq_85_3">
+    <joint>gripper_finger1_joint</joint>
+    <mimicJoint>gripper_finger1_inner_knuckle_joint</mimicJoint>
+    <!--multiplier>1.0</multiplier>
+                <offset>0.0</offset-->
+  </plugin>
+  <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_robotiq_85_4">
+    <joint>gripper_finger1_joint</joint>
+    <mimicJoint>gripper_finger1_finger_tip_joint</mimicJoint>
+    <multiplier>-1.0</multiplier>
+    <offset>0.0</offset>
+  </plugin>
+  <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="mimic_robotiq_85_5">
+    <joint>gripper_finger1_joint</joint>
+    <mimicJoint>gripper_finger2_finger_tip_joint</mimicJoint>
+    <multiplier>-1.0</multiplier>
+    <offset>0.0</offset>
+  </plugin>
+</gazebo>
+</robot>
